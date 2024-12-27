@@ -1,0 +1,223 @@
+h1, h2, h3, h4, .h1, .h2, .h3{
+    font-family: 'Nova Square', cursive;}
+    
+*{
+font-family: 'Rajdhani', sans-serif;}
+        
+:root{ 
+--main:#ececec;
+--sec: darkred; 
+--acc: #C67F7F; 
+            
+        }
+        
+
+body{
+    background-color: var(--main);
+}
+
+.text-main{
+    color: var(--main);
+}
+
+.bg-main{
+    background-color: var(--main);
+}
+
+.border-main{
+    border: 3px solid var(--main);
+}
+
+.text-sec{
+    color: var(--sec);
+}
+
+.bg-sec{
+    background-color: var(--sec);
+}
+
+.border-sec{
+    border: 3px solid var(--sec);
+}
+
+.text-acc{
+    color: var(--acc) !important;
+}
+
+.bg-acc{
+    background-color: var(--acc);
+}
+
+
+td {
+    width: 200px!important /* Imposta la larghezza a 150px */
+}
+
+.img-logo{
+    width: 100px;
+    background-color: var(--main);
+}
+
+
+/* Start Navbar */
+.nav-link{ 
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+}
+/* End Navbar */
+
+
+
+/* Start Header */
+.titolo{
+    background: linear-gradient(var(--main), transparent) , url(./media/Nantes-Venise-Train-1-scaled.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.h1-header{
+    letter-spacing: 20px;
+    margin-top: 50px;
+}
+
+.img-header{
+    height: 100%;
+    /* position: absolute; */
+    bottom: 0%;
+    left: 0px; 
+}
+
+/* End header */
+
+/* Start section 1 */
+
+.quote{
+    font-size: 20px;
+}
+
+
+.virgolette{
+    display: inline;
+    color: var(--sec);
+    font-size:50px;
+}
+
+/* End section 1 */
+.list-none{
+        list-style-type:none
+}
+/* Start section 2 */
+
+.timeline{
+    border-bottom: 3px solid var(--sec);    
+}
+
+.p-icon{
+    font-weight: 600;
+}
+/* End section 2 */
+
+/* Start section 3 */
+.circle::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--main);
+    border: 1px solid var(--sec);
+    position: absolute;
+    left:148px;
+    bottom: -10px;
+}
+
+.h3-red{
+    color: var(--sec) ;
+}
+/* End section 3 */
+
+/* Inizio Button */
+
+.img-button{
+    background-image: url(media/trees2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vh-100{
+    height: 70vh;
+}
+
+.button-p{
+    color: #ececec;
+padding-top:15px;
+padding-left: 75px;
+padding-bottom: 15px;
+padding-right: 75px;
+background-color: #8b0000;
+border-radius: 25px;
+
+}
+
+.button-p:hover{
+    background-color: #ececec;
+    color: #8b0000;
+}
+/* Fine Button */
+
+
+/* Inizio timeline */
+.img-timeline{
+    background-image: url(media/single.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+.border-time{
+    border-left: 3px solid darkred;
+}
+
+.circle-l{
+    font-size: 25px;
+    position: relative;
+    color: #8b0000;
+}
+.circle-l::before{
+    position: absolute;
+    background-color: #ececec;
+    border: 3px solid darkred;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -24px;
+}
+
+.timeline-p{
+    width: 50%;
+    font-size: 20px;
+}
+
+.pbottom-0{
+    padding-bottom: 0px !important;
+}
+
+
+.bordo-img{
+    width: 50%;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid darkred;
+}
+
+.size-img{
+    width: 40%;
+    border-radius: 50%;
+    padding: 10px;
+    border: 5px solid darkred;
+    }
+    
