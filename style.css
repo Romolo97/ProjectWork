@@ -1,17 +1,15 @@
 h1, h2, h3, h4, .h1, .h2, .h3{
-    font-family: 'Nova Square', cursive;}
-    
+    font-family: 'Nova Square', cursive;} /*A tutti i titoli ho voluto dare questo font*/
 *{
-font-family: 'Rajdhani', sans-serif;}
+font-family: 'Rajdhani', sans-serif;}  /*Mentre agli altri tag di teso ho voluto dare quest'altro font*/
         
 :root{ 
 --main:#ececec;
---sec: darkred; 
---acc: #C67F7F; 
-            
-        }
+--sec: #8b0000; 
+--acc: #C67F7F;       
+}  /*Ho scelto dei colori simili a quelli dell'azienda che potessero in qualche modo stare bene nella palette e ho creato le variabili così da utilizzare quelle e se un giorno dovessi cambiare colore mi basterà cambiare solo in questo punto*/
         
-
+ /*In questa parte ci sono le classi generiche come i colori dei font e dei background*/
 body{
     background-color: var(--main);
 }
@@ -48,9 +46,11 @@ body{
     background-color: var(--acc);
 }
 
-
-td {
-    width: 200px!important /* Imposta la larghezza a 150px */
+.h3-red{
+    color: var(--sec) ;
+}
+.vh-100{
+    height: 100vh;
 }
 
 .img-logo{
@@ -59,20 +59,8 @@ td {
 }
 
 
-/* Start Navbar */
-.nav-link{ 
-    display: inline;
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(30, 30, 30);
-}
-/* End Navbar */
-
-
-
-/* Start Header */
 .titolo{
-    background: linear-gradient(var(--main), transparent) , url(./media/Nantes-Venise-Train-1-scaled.webp);
+    background: linear-gradient(var(--main), transparent) , url(./media/Nantes-Venise-Train-1-scaled.webp); /*Qui ho creato una patina sottile sull'immagine di sfondo dell'header così da avere un senso di trasparenza e di contrasto. Per farlo ho utilizzato il linear-gradient con il colore bianco o comunque più chiaro di quelli che avevo. */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,31 +74,17 @@ td {
 
 .img-header{
     height: 100%;
-    /* position: absolute; */
     bottom: 0%;
     left: 0px; 
 }
-
-/* End header */
-
-/* Start section 1 */
 
 .quote{
     font-size: 20px;
 }
 
-
-.virgolette{
-    display: inline;
-    color: var(--sec);
-    font-size:50px;
-}
-
-/* End section 1 */
 .list-none{
-        list-style-type:none
+    list-style-type:none
 }
-/* Start section 2 */
 
 .timeline{
     border-bottom: 3px solid var(--sec);    
@@ -119,105 +93,20 @@ td {
 .p-icon{
     font-weight: 600;
 }
-/* End section 2 */
-
-/* Start section 3 */
-.circle::after{
-    content: "";
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: var(--main);
-    border: 1px solid var(--sec);
-    position: absolute;
-    left:148px;
-    bottom: -10px;
-}
-
-.h3-red{
-    color: var(--sec) ;
-}
-/* End section 3 */
-
-/* Inizio Button */
-
-.img-button{
-    background-image: url(media/trees2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.vh-100{
-    height: 70vh;
-}
 
 .button-p{
     color: #ececec;
-padding-top:15px;
-padding-left: 75px;
-padding-bottom: 15px;
-padding-right: 75px;
-background-color: #8b0000;
-border-radius: 25px;
-
+    padding-top:15px;
+    padding-left: 75px;
+    padding-bottom: 15px;
+    padding-right: 75px;
+    background-color: #8b0000;
+    border-radius: 25px;
 }
 
 .button-p:hover{
     background-color: #ececec;
     color: #8b0000;
 }
-/* Fine Button */
 
-
-/* Inizio timeline */
-.img-timeline{
-    background-image: url(media/single.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 50%;
-}
-
-.border-time{
-    border-left: 3px solid darkred;
-}
-
-.circle-l{
-    font-size: 25px;
-    position: relative;
-    color: #8b0000;
-}
-.circle-l::before{
-    position: absolute;
-    background-color: #ececec;
-    border: 3px solid darkred;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    left: -24px;
-}
-
-.timeline-p{
-    width: 50%;
-    font-size: 20px;
-}
-
-.pbottom-0{
-    padding-bottom: 0px !important;
-}
-
-
-.bordo-img{
-    width: 50%;
-    border-radius: 50%;
-    padding: 5px;
-    border: 3px solid darkred;
-}
-
-.size-img{
-    width: 40%;
-    border-radius: 50%;
-    padding: 10px;
-    border: 5px solid darkred;
-    }
     

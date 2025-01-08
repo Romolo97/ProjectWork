@@ -5,67 +5,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Bootstrap CSS -->
+   
+    <!-- Integrazione di Bootstrap CSS per snellire il file style.css personale e utilizzare classi di una libreria esterna -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
-    <!-- Google font -->
+    <!-- Integrazione di Google font per font più accattivanti e personalizzabili. Dal loro sito si possono scegliere diversi font e importarli anche in dimensioni diverse così da avere una scala maggiore tra titoli e paragrafi-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
+    <!-- Integrazione del Custom CSS messo per ultimo così da poter recepire le modifiche, altrimenti il compilatore sovrascriverebbe il mio foglio di stile con quello di bootstrap. Idem sarebbe per il file di custom script di JavaScript poichè vanno prima importate le librerie e dipendenze esterne. -->
     <link rel="stylesheet" href="./style.css">
-    
-    <title>Rapporto di Sostenibilità</title>
+
+    <link rel="icon" href="/ProjectWork/media/trenitalia-svgrepo-com-bgwhite.svg"> <!--Cambiare l'icona della pagina nella scheda del browser-->
+    <title>Rapporto di Sostenibilità</title> <!-- utile per modificare il nome della scheda del browser -->
 </head>
 
 <body>
-    <!-- Start Navbar -->
-    <header class="container-fluid">
+    <!-- Sezione più in alto, dove di solito potrebbe starci una navbar dove andare a inserire i vari rinderizzamenti ad altre sezioni del sito. Ma nel nostro caso non ho voluto inserirla perchè ho voluto sviluppare una SINGLE-PAGE come template e si sarebbe perso il senso della navigazione-->
+    <section class="container-fluid">
         <div class="row d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-center">
-                <img class="img-fluid img-logo" src="/media/trenitalia-svgrepo-com.svg" alt="logo della pagina"> 
+                <img class="img-fluid img-logo" src="/ProjectWork/media/trenitalia-svgrepo-com.svg" alt="logo della pagina"> 
             </div>
         </div>            
-    </header> 
-    <!-- End Navbar -->
+    </section> 
     
-    <!-- Start Header -->
+    <!-- Header, dove troviamo la vera e propria homepage con un'immagine di sfondo e il bottone per il download del modulo. -->
     <header class="container-fluid titolo">
         <div class="row vh-100 text-center">
             <div class="col-12">
                 <h1 class="text-sec display-2 h1-header">Rapporto di Sostenibilità</h1>
             </div>
-           <!--Inizio Button-->
+           <!--Inizio Button per il dowload del rapporto di sostenibilità-->
         <div class="container-fluid">
             <div class="row pb-5">
                 <div class="col-12 text-center d-flex align-items-center justify-content-center">
-                    <a href="./media/rapporto-di-sostenibilita-2023-gruppo-fs.pdf" type="button" download="rapporto-di-sostenibilita-2023-gruppo-fs.pdf" class="text-decoration-none btn-lg button-p">Scarica qui</a>
+                    <a href="./media/rapporto-di-sostenibilita-2023-gruppo-fs.pdf" type="button" download="rapporto-di-sostenibilita-2023-gruppo-fs.pdf" class="text-decoration-none btn-lg button-p">Scarica qui</a> <!--Il tag a definisce un collegamento ipertestuale per un'altra pagina e con l'attributo href indichiamo il percorso della pagina che vogliamo indirizzare, in questo caso noi utilizziamo anche l'attributo download che ci permette di scaricare attraverso questo tag un file. Come parametro dell'attributo download andremo a inserire il nome del file, facendo attenzione al namespacing, mentre nel href indicheremo il percorso di dove si trova il file. NB: Per farsì che parta automaticamente il download da interfaccia, dobbiamo salvare il file all'interno di un databse (o nel nostro progetto se lavoriamo in locale) poichè se no il browser ce lo aprirà in un'altra scheda e basta -->
                 </div>
+                <div class="pt-5 text-center d-flex align-items-center justify-content-end">
+                    <i class="p-icon fa-sharp fa-solid fa-arrow-right fa-rotate-90" style="color: #8b0000; font-size: 40px; position: fixed;"></i>
+                </div> <!--è una freccietta messa in basso per indicare all'utente di scendere e scrollare tutta la pagina. Purtroppo con solo HTML e CSS non è possibile renderla dinamica in base ad esempio allo scroll dell'utente e quindi ho dovuto metterla statica verso il basso e in position fixed così accompagna l'utnete fino in fondo-->
             </div>
         </div>
-        <!--Fine button-->
+        <!--Fine button download-->
         </div>
     </header>
     <!-- End Header -->
     <div class="col-12">
-        <img src="./media/SteveLambert-Bart-Train-Exterior-1.svg" alt="Immagine montagna bianca" class="img-fluid img-header">
+        <img src="./media/SteveLambert-Bart-Train-Exterior-1.svg" alt="Immagine treno per separare le sezioni" class="img-fluid img-header">
     </div>
-    <!-- Start Section 1-->
+    <!-- Start Section 1 dove ho voluto inserire una panoramica di cosa è il rapporto di sostenibilità e come opera l'azienda scelta -->
     <section class="container-fluid pt-3">
-        <div class="row pt-3 mb-5">
-            <div class="col-3 d-flex justify-content-end"><p class="virgolette">"</p></div>
+        <div class="row pt-3 mb-5  justify-content-center">
             <div class="col-6 text-center mx-0">
                 <p class="quote"> Il Rapporto di Sostenibilità 2023 del Gruppo FS rappresenta in maniera articolata le strategie, i risultati e le prospettive delle nostre performance produttive, sociali e ambientali. Una fotografia del lungo percorso di miglioramento continuo che, grazie alla professionalità e dedizione di tutte le nostre persone, ci permette di creare valore per i clienti, i fornitori, la comunità e gli stakeholder tutti. L’Executive Summary rappresenta l’immagine sintetica dei principali risultati raggiunti dal Gruppo FS nel 2023.</p>
             </div>
-            <div class="col-1 my-5"><p class="virgolette">"</p></div>
         </div>
     </section>
-    <!-- End Section 1-->
     
-    <!-- Start Section 2-->
-    <section class="container-fluid p-5">
-        
+    <!-- Start Section 2 dove ho invece illustrato quali sono i principali ambiti in cui si focalizza l'azienda scelta, volendoli rappresentare con delle icone per rendere il tutto più leggero e accattivante all'utente-->
+    <section class="container-fluid p-4">
         <div class=" col d-flex mb-5 justify-content-center">    
             <div class="col-2 text-center timeline position-relative">
                 <i class="fas fa-heart-pulse fa-3x"></i>
@@ -85,22 +85,14 @@
             </div>
         </div>
     </section>
-    <!-- End Section 2-->
-    
-    <!-- Start Section 3-->
+   
+    <!-- Start Section 3 è la sezione dove sviscero un po' gli aspetti delle area citate nella sezione 2 e racconto dei dati da me recuperati relativi all'azienda scelta-->
     <section class="container-fluid">
-        <div class="row d-flex m-5 justify-content-center">
-            <p class="text-center fs-4">
-                Le diverse aree di intervento contribuiscono a 13 dei 17 Obiettivi di Sviluppo Sostenibile delle Nazioni Unite, intercettando anche molte delle missioni del PNRR.
-            </p>
-        </div>
         <div class="row py-5 justify-content-around">
-            
             <div class="col-4">
                 <h3 class="h3-red">SALUTE E SICUREZZA</h3>
                 <p class="p-red">Infortuni mortali sul lavoro dei dipendenti tendenti a zero nell’arco di Piano Leader in Europa per la sicurezza del viaggio</p>
             </div>
-
             <div class="col-4 text-end">
                 <h3 class="h3-red ">ECONOMIA CIRCOLARE E ACQUISTI RESPONSABILI </h3>
                 <ul class="p-red  list-none">
@@ -114,10 +106,8 @@
                         interventi sulle stazioni</li>
                    </ul>
             </div>
-            
         </div>
         <div class="row py-5 justify-content-around">
-            
             <div class="col-4 text-start">
                 <h3 class="h3-red">CAMBIAMENTO CLIMATICO</h3>
                     <ul class="p-red  list-none p-0">
@@ -136,7 +126,6 @@
                             rispetto al 2021)</li>
                        </ul>
             </div>
-
             <div class="col-4 text-end">
                 <h3 class="h3-red ">INCLUSIONE, VALORIZZAZIONE
                     E SVILUPPO DI PERSONE E
@@ -149,11 +138,15 @@
                         umano del Gruppo</li>
                    </ul>
             </div>
-            
         </div>
-        
+        <div class="row d-flex m-5 justify-content-center">
+            <p class="text-center fs-4">
+                Le diverse aree di intervento contribuiscono a 13 dei 17 Obiettivi di Sviluppo Sostenibile delle Nazioni Unite, intercettando anche molte delle missioni del PNRR.
+            </p>
+        </div>
     </section>
 
+    <!--start footer, in questa sezione sarebbe di buon uso inserire le informazioni di contatto con un breve spiecchetto sulle informazioni relative all'azienda e magari anche alcune sezioni di navigazioni, anche ripetendole dalla navbar-->
     <footer class="container-fluid bg-sec text-main">
         <div class="row pt-3">
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center flex-column">
@@ -166,16 +159,17 @@
                 <p>Piazza della Croce Rossa, 1 -  00161 Roma</p>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-                <img class="img-fluid img-logo" src="/media/trenitalia-svgrepo-com.svg" alt="logo della pagina"> 
+                <img class="img-fluid img-logo" src="/ProjectWork/media/trenitalia-svgrepo-com.svg" alt="logo della pagina"> 
             </div>
           </div>
     </footer>
     
-    <!-- Fontawesome -->
+    <!-- Fontawesome è una libreria che fornisce alcune icon già predefinite e gratuite, così da evitare di scaricarle e rendere il progetto più leggero  -->
     <script src="https://kit.fontawesome.com/c837cac417.js" crossorigin="anonymous"></script>
     
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Script per l'import di bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+     <!-- sarebbe poi buona norma importare più in basso possibile il proprio Codice JavaScript personalizzato e utillizzare l'attributo async così da non bloccare il rendering della pagina poichè il file di js potrebbe pesare molto e bloccherebbe il caricamento.-->
+
 </body>
 </html>
