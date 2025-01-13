@@ -58,6 +58,9 @@ body{
     background-color: var(--main);
 }
 
+li{
+    font-size: large;
+}
 
 .titolo{
     background: linear-gradient(var(--main), transparent) , url(./media/Nantes-Venise-Train-1-scaled.webp); /*Qui ho creato una patina sottile sull'immagine di sfondo dell'header così da avere un senso di trasparenza e di contrasto. Per farlo ho utilizzato il linear-gradient con il colore bianco o comunque più chiaro di quelli che avevo. */
@@ -79,7 +82,7 @@ body{
 }
 
 .quote{
-    font-size: 20px;
+    font-size: x-large;
 }
 
 .list-none{
@@ -110,3 +113,37 @@ body{
 }
 
     
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: var(--sec);
+    color: var(--main);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: x-large;
+    border: 1px solid var(--main);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--main);
+}
+
+tbody tr:hover {
+    background-color: var(--acc);
+}
+
+th {
+    font-weight: bold;
+}
+
+.home:hover{
+    background-color: #ececec;
+    color: #8b0000;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+    <!-- Integrazione di Bootstrap CSS per snellire il file style.css personale e utilizzare classi di una libreria esterna -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Integrazione di Google font per font più accattivanti e personalizzabili. Dal loro sito si possono scegliere diversi font e importarli anche in dimensioni diverse così da avere una scala maggiore tra titoli e paragrafi-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Integrazione del Custom CSS messo per ultimo così da poter recepire le modifiche, altrimenti il compilatore sovrascriverebbe il mio foglio di stile con quello di bootstrap. Idem sarebbe per il file di custom script di JavaScript poichè vanno prima importate le librerie e dipendenze esterne. -->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" href="/ProjectWork/media/trenitalia-svgrepo-com-bgwhite.svg"> <!--Cambiare l'icona della pagina nella scheda del browser-->
+    <title>Sintesi rapporto</title>
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <img class="img-fluid img-logo" src="/ProjectWork/media/trenitalia-svgrepo-com.svg" alt="logo della pagina"> 
+            </div>        
+        </div>   
+    </section> 
+    <div class="container mt-3">
+        <h1 class="text-start">Risultati della Gestione 2021</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sezione</th>
+                    <th>Descrizione</th>
+                    <th>Unità</th>
+                    <th>Valore</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Risultati Economici</td>
+                    <td>Risultato netto</td>
+                    <td>mln €</td>
+                    <td>193</td>
+                </tr>
+                <tr>
+                    <td>Valore economico direttamente generato</td>
+                    <td>mln €</td>
+                    <td>12.328</td>
+                </tr>
+                <tr>
+                    <td>Valore economico distribuito</td>
+                    <td>mln €</td>
+                    <td>10.444</td>
+                </tr>
+                <tr>
+                    <td>Investimenti</td>
+                    <td>mln €</td>
+                    <td>12.537</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Traffico su Ferro</td>
+                    <td>Viaggiatori-km</td>
+                    <td>mld</td>
+                    <td>21,5</td>
+                </tr>
+                <tr>
+                    <td>Treni-km</td>
+                    <td>mln</td>
+                    <td>270</td>
+                </tr>
+                <tr>
+                    <td>Tonnellate-km (merci)</td>
+                    <td>mld</td>
+                    <td>21,9</td>
+                </tr>
+                <tr>
+                    <td>Treni-km (merci)</td>
+                    <td>mln</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Traffico su Gomma</td>
+                    <td>Passeggeri-km</td>
+                    <td>mld</td>
+                    <td>1,7</td>
+                </tr>
+                <tr>
+                    <td>Bus-km</td>
+                    <td>mln</td>
+                    <td>178</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Energia e Ambiente</td>
+                    <td>Consumi di energia finale</td>
+                    <td>mln GJ</td>
+                    <td>26,4</td>
+                </tr>
+                <tr>
+                    <td>Emissioni di gas a effetto serra</td>
+                    <td>mln tCO2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Gare aggiudicate con criteri di sostenibilità</td>
+                    <td>%</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Qualità del Servizio</td>
+                    <td>Trasporto passeggeri su ferro (Frecce)</td>
+                    <td>0-10 min</td>
+                    <td>82,5%</td>
+                </tr>
+                <tr>
+                    <td>Trasporto passeggeri su ferro (IC Giorno/Notte)</td>
+                    <td>0-15 min</td>
+                    <td>88,5%</td>
+                </tr>
+                <tr>
+                    <td>Trasporto regionale su ferro</td>
+                    <td>0-5 min</td>
+                    <td>93%</td>
+                </tr>
+                <tr>
+                    <td>Trasporto passeggeri su gomma (urbano)</td>
+                    <td>0-5 min</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>Trasporto passeggeri su gomma (extraurbano)</td>
+                    <td>0-15 min</td>
+                    <td>95,3%</td>
+                </tr>
+                <tr>
+                    <td>Customer satisfaction (media/lunga percorrenza)</td>
+                    <td>% soddisfatti</td>
+                    <td>97,1%</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Sicurezza e Investimenti</td>
+                    <td>Investimenti in sicurezza (infrastruttura)</td>
+                    <td>mln €</td>
+                    <td>3.715,0</td>
+                </tr>
+                <tr>
+                    <td>Investimenti in sicurezza (trasporto)</td>
+                    <td>mln €</td>
+                    <td>439,5</td>
+                </tr>
+                <tr>
+                    <td>Totale personale</td>
+                    <td>n.</td>
+                    <td>81.906</td>
+                </tr>
+                <tr>
+                    <td>Formazione</td>
+                    <td>mgl/ore</td>
+                    <td>659</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container mt-2">
+        <h2 class="h3-red">Materialità</h2>
+        <div class="row justify-content-center">
+
+            <p class="quote">Il Gruppo ogni anno aggiorna l’analisi per l’identificazione delle tematiche sociali, ambientali, di governance ed economiche prioritarie (cosiddetta “matrice di materialità”), necessaria per riconoscere le sfide e le opportunità di creazione di valore nel lungo periodo. L’analisi 2021 è partita dalla revisione dell’albero dei temi elaborato nel 2020, che ha tenuto conto degli orientamenti strategici aziendali e delle evoluzioni del contesto esterno volta ad anticipare le tematiche emergenti, la cui gestione risulterà essenziale per competere nel futuro. Il processo di aggiornamento dei temi prioritari per il Gruppo, costruito con logica bottom up (partendo quindi dall’analisi delle informazioni raccolte dalle società controllate), ha previsto le seguenti attività:</p>
+            <img style="width: 70%; "src="./media/G_sostenibilita_materialita_4.png" alt="matrice di materialità 2021">
+        </div>
+        <div class="row justify-content-center mt-3">
+            <p class="quote">
+                La metodologia di aggregazione dei dati elaborati dalle società ha tenuto conto di: rilevanza e dimensione della società, numerosità degli stakeholder esterni coinvolti, peso organizzativo del management consultato.
+            </p>
+            <p class="quote mt-1">La matrice di materialità sottostante rappresenta il quadrante superiore destro della matrice complessiva che riporta le priorità percepite dagli stakeholder (asse y), confrontate con le priorità del Gruppo (asse x), considerando gli impatti subiti e generati all’esterno.</p>
+            <img style="width: 70%; "src="./media/G_sostenibilita_materialita_2.png" alt="mappa dei temi - matrice materialità">
+        </div>
+        <div class="row justify-content-center mt-3">
+            <p class="quote">
+                Il tema “Sicurezza delle persone: valori, tecnologie e cultura”, risultato prioritario in tutte le società che hanno contribuito alla matrice, non è stato incluso nella rappresentazione aggregata poiché, come ha potuto più volte ribadire l’Amministratore Delegato di FS, «per manutenzione e sicurezza non ci sono limiti e non ci devono essere limiti». Per tale ragione, il tema in parola non è graficamente incluso nella matrice di materialità in quanto trasversale e con priorità assoluta, nella visione del management, rispetto agli altri temi
+            </p>
+           
+        </div>
+        <hr>
+        <div class="row justify-content-center mt-3">
+            <h5>Temi materiali VS Sustainable Development Goals (SDGs)</h5>
+            <img  src="./media/G_sostenibilita_materialita.png" alt="schema di Temi materiali VS Sustainable Development Goals (SDGs)">
+            <p class="quote">
+                Sicurezza delle persone: valori, tecnologie e cultura”, ogni società del Gruppo FS opera promuovendo la salute e sicurezza sul lavoro, attraverso la prevenzione di incidenti e infortuni delle persone, e garantendo ai clienti i più elevanti standard di sicurezza del viaggio, attraverso la manutenzione, la protezione in stazione e a bordo e la sicurezza della circolazione, contribuendo al raggiungimento dei seguenti SDGs:
+            </p>
+            <img style="width: 50%;" src="./media/G_sostenibilita_materialita_3.png" alt="SDGs da raggiungere">
+        </div>
+    </div>
+    <footer class="container-fluid bg-sec mt-5 text-main">
+        <div class="row pt-3">
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center flex-column">
+                <p>Gruppo FS</p>
+                <p>The Mobility Leader</p>
+                <p class="text-center">Progettiamo e realizziamo infrastrutture per una mobilità sostenibile di persone e merci. Accorciamo le distanze per lo sviluppo e la crescita del nostro Paese.</p>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center flex-column">
+                <p>Sede legale</p>
+                <p>Piazza della Croce Rossa, 1 -  00161 Roma</p>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                <img class="img-fluid img-logo" src="/ProjectWork/media/trenitalia-svgrepo-com.svg" alt="logo della pagina"> 
+            </div>
+          </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/c837cac417.js" crossorigin="anonymous"></script>
+    
+    <!-- Script per l'import di bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
