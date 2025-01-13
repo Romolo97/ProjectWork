@@ -112,7 +112,7 @@ li{
     color: #8b0000;
 }
 
-    
+ /*Questa sezione è dedicata alla tabella della sintesi, ho voluto inserire un po' di grafica in modo tale da essere più intuitiva nel leggere i dati */   
 table {
     width: 100%;
     border-collapse: collapse;
@@ -131,11 +131,11 @@ th, td {
     border: 1px solid var(--main);
 }
 
-tbody tr:nth-child(even) {
-    background-color: var(--main);
+tbody tr:nth-child(even) {  /*Il selettore nth-child(even) è comunemente usato per creare un effetto di zebra striping in tabelle o elenchi, migliorando la leggibilità alternando il colore di sfondo delle righe.*/  
+    background-color: #f2f2f2;
 }
 
-tbody tr:hover {
+tbody tr:hover {  /*Il selettore hover invece l'ho utilizzato per mantenere il contesto di dove si trova il puntatore del mouse e evidenziare quella sezione della tabella.*/  
     background-color: var(--acc);
 }
 
@@ -143,7 +143,4 @@ th {
     font-weight: bold;
 }
 
-.home:hover{
-    background-color: #ececec;
-    color: #8b0000;
-}
+
